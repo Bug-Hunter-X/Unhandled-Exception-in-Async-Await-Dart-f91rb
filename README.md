@@ -1,0 +1,3 @@
+# Unhandled Exception in Async/Await Dart
+
+This repository demonstrates a common error in Dart's async/await pattern: unhandled exceptions within asynchronous functions.  The `bug.dart` file contains code that fetches data from an API.  If an error occurs during the API call, the exception is caught but then rethrown without proper handling in `main()`, causing the program to silently fail. The solution addresses this by properly handling the exceptions at the `main()` function level.
